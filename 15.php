@@ -8,13 +8,13 @@
  */
 
 $a=1;
-$b=2;
-$operator = '/';
+$b=0;
+$operator = '%';
         if ($operator=='/' && $a != 0 && $b != 0){$f = $a / $b; echo "деление= " . $f.'<br>';}
         elseif ($operator=='+'){$c = $a + $b; echo "сумма= " . $c.'<br>';}
         elseif ($operator=='-'){$d = $a - $b; echo "разность= " . $d.'<br>';}
         elseif ($operator=='*'){$e = $a * $b; echo  "произведение= " . $e.'<br>';}
-        elseif ($operator=='%'){$g = $a % $b; echo "остаток от деления= " . $g;}
+        elseif ($operator=='%' && $a != 0 && $b != 0){$g = $a % $b; echo "остаток от деления= " . $g;}
         else {echo "на 0 делить нельзя.";}
 
 
